@@ -6,15 +6,14 @@
       "url": "http://localhost:5142/swagger/v1/swagger.json",
       "output": null,
       "newLineBehavior": "Auto"
-    },
-    "defaultPropertyNameHandling": "PascalCase"
+    }
   },
   "codeGenerators": {
     "openApiToTypeScriptClient": {
       "className": "{controller}Client",
       "moduleName": "",
       "namespace": "",
-      "typeScriptVersion": 1.7,
+      "typeScriptVersion": 1.8,
       "template": "Fetch",
       "promiseType": "Promise",
       "httpClass": "HttpClient",
@@ -65,9 +64,6 @@
       "inlineNamedAny": false,
       "includeHttpContext": false,
       "templateDirectory": null,
-      "typeNameGeneratorType": null,
-      "propertyNameGeneratorType": null,
-      "enumNameGeneratorType": null,
       "serviceHost": ".",
       "serviceSchemes": null,
       "output": "content/js/api.ts",

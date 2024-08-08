@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "nswag": "^14.0.2"
+    "nswag": "^14.1.0"
   },
   "scripts": {
     "generate-client": "nswag run"
