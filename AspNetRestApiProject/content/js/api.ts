@@ -11,7 +11,7 @@
 export class WeatherForecastClient {
     private http: { fetch(url: RequestInfo, init?: RequestInit): Promise<Response> };
     private baseUrl: string;
-    protected jsonParseReviver: (key: string, value: any) => any = undefined;
+    protected jsonParseReviver: ((key: string, value: any) => any) | undefined = undefined;
 
     constructor(baseUrl?: string, http?: { fetch(url: RequestInfo, init?: RequestInit): Promise<Response> }) {
         this.http = http ? http : window as any;
@@ -56,7 +56,7 @@ export interface WeatherForecast {
     date: string;
     temperatureC: number;
     temperatureF: number;
-    summary?: string;
+    summary?: string | undefined;
 }
 
 export class SwaggerException extends Error {
